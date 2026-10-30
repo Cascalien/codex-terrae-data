@@ -3,12 +3,13 @@
 Map data that the Codex Terrae app downloads on demand, so the app itself stays small. The app checks
 every file against its SHA-256 before using it.
 
-## Altered rock (release `altered-rock-v1`)
+## Altered rock (`altered-rock/`, tag `altered-rock-v1`)
 
 One PMTiles file per state (`altered-rock-wa.pmtiles` ... `altered-rock-az.pmtiles`): lossless WebP
 tiles, zooms 5 to 12, of eight groups of hydrothermally altered rock and key minerals read from the
 ASTER satellite, for Washington, Oregon, Idaho, Montana, Nevada, Utah, Colorado and Arizona.
-Checksums: `altered-rock-SHA256SUMS.txt`.
+Checksums: `altered-rock/SHA256SUMS.txt`. The app reads them from the tag, so the files at a tag never change:
+`https://raw.githubusercontent.com/Cascalien/codex-terrae-data/altered-rock-v1/altered-rock/altered-rock-wa.pmtiles`.
 
 Source: Rockwell, B.W., and Bonham, L.C., 2017, Digital maps of hydrothermal alteration type, key
 mineral groups, and green vegetation of the western United States derived from automated analysis of
