@@ -13,6 +13,13 @@ downloads never changes under it (v1: commit 61415ba903fd4b4868083327e5f396b58a3
 `https://raw.githubusercontent.com/Cascalien/codex-terrae-data/61415ba903fd4b4868083327e5f396b58a3f9067/altered-rock/altered-rock-wa.pmtiles`.
 A new version goes in as new files and a new commit; old commits stay readable.
 
+v1.1 (2026-10-31): nine more states from the same release, each read by the app at the commit that added it:
+California, Wyoming, New Mexico, North Dakota, South Dakota, Nebraska, and the western edges of Texas, Oklahoma and
+Kansas (`altered-rock-ca.pmtiles` ... `altered-rock-ks.pmtiles`). The release's western data ends partway across the
+Plains: about 62% of North Dakota, 44% of South Dakota, 25% of Nebraska, and 3 to 5% of Texas, Oklahoma and Kansas are
+covered. Where the northwest and southwest files overlap, the second file fills only gaps more than about 1 km from any
+reading in the first (the app's tools/aster/README.md, "Per-state files").
+
 Source: Rockwell, B.W., and Bonham, L.C., 2017, Digital maps of hydrothermal alteration type, key
 mineral groups, and green vegetation of the western United States derived from automated analysis of
 ASTER satellite data: U.S. Geological Survey data release, https://doi.org/10.5066/F7CR5RK7 (public
