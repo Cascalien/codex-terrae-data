@@ -21,3 +21,17 @@ wetlands left empty using USGS Annual NLCD 2005 land cover.
 
 What it can't tell you: the layer is what the satellite read on bare ground. Forest, snow, cloud and
 fields hide the rock, so a blank isn't "unaltered", and most altered rock holds no ore.
+
+## Place names (`places/`, v1)
+
+One SQLite file per state (`places-ca.db` ... `places-tx.db`) of USGS Geographic Names Information System
+(GNIS) domestic names: summits, ridges, lakes, streams, springs, flats, towns and the rest, with census, civil
+and military names left out, for the app's offline place search. Same layout as the place names built into the
+app (tools/places/build_places_db.py): `place(id, name, class, county, state, lat, lon)` with positions as
+degrees times 100,000, and `word(w, place)` for prefix search. States: California, Wyoming, New Mexico, North
+Dakota, South Dakota, Nebraska, Kansas, Oklahoma and Texas. Checksums: `places/SHA256SUMS.txt`. As with altered
+rock, the app reads each file at the commit that added it.
+
+Source: U.S. Geological Survey, Geographic Names Information System, Domestic Names, state files from
+https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/DomesticNames/ (public domain), downloaded
+2026-10-30, built with the app's tools/places/build_place_packs.py.
