@@ -23,6 +23,9 @@ reading in the first (the app's tools/aster/README.md, "Per-state files").
 v1.2 (2026-10-31): Idaho rebuilt the same way, adding the strip along the Nevada and Utah line (42.0 to 42.46 N, about
 9,700 km²) that only the southwest file covers; none of v1's Idaho pixels changed. The app reads it at its own commit.
 
+v1.3 (2026-10-31): Oregon rebuilt the same way, filling its strip along the California and Nevada line (42.0 to 42.26
+N); none of v1's Oregon pixels changed.
+
 Source: Rockwell, B.W., and Bonham, L.C., 2017, Digital maps of hydrothermal alteration type, key
 mineral groups, and green vegetation of the western United States derived from automated analysis of
 ASTER satellite data: U.S. Geological Survey data release, https://doi.org/10.5066/F7CR5RK7 (public
