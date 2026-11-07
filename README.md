@@ -58,3 +58,39 @@ v1.5 (2026-11-06): New Jersey, New York, Connecticut, Rhode Island, Massachusett
 and military names left out. Their checksums are appended to `places/SHA256SUMS.txt`; the app reads them at the commit
 that added them. GNIS puts the Saint Lawrence River's point at its mouth in the Gulf of St. Lawrence (49.67 N, 64.50 W);
 the app's box for New York, which only decides where search offers the file, is drawn round the state's other names.
+
+## Topo-map pits and shafts (`topomines/`, v1)
+
+One zip per state (`topomines-al.zip` ... `topomines-wy.zip`), every state but North Carolina, which is built into the
+app: the prospect pits, shafts, adits, quarries, open pits, sand, gravel and clay pits, tailings, dumps and disturbed
+ground that USGS digitized from its 7.5- and 15-minute topographic maps (1886 to 2006). Each zip holds the state's
+pins in quarter-degree files (`nv_152_w469.json`, laid out like the app's bundled North Carolina files) and
+`index.json` listing each file's box and pin count, so the app reads only the files around the view. A polygon on a
+state line is in both states' files (the app shows it once). Checksums: `topomines/SHA256SUMS.txt`. Built with the
+app's tools/topomines/build_topo_mines.py (`pack`), written the same way every time, so a rebuild of the same data
+has the same SHA-256.
+
+Source: Horton, J.D., and San Juan, C.A., 2025, Consolidated prospect- and mine-related features from U.S. Geological
+Survey 7.5- and 15-minute topographic quadrangle maps of the United States: U.S. Geological Survey data release,
+https://doi.org/10.5066/P9TAALR6 (CC0 1.0: "This work is marked with the Creative Commons Zero v1.0 Universal (CC0-1.0)
+public domain dedication"), read from the release's feature service on 2026-11-06.
+
+What it can't tell you: a symbol on an old map shows where something was dug or mapped by that map's year. It isn't a
+find, isn't permission to collect, and doesn't say a working is open or safe; many have been filled, built over or
+mined away. Stay out of shafts and adits.
+
+## Uranium samples (`uranium/`, v1)
+
+One zip per state (`uranium-ak.zip` ... `uranium-wy.zip`), every state but North Carolina, which is built into the app:
+USGS National Geochemical Database samples with uranium measured in them (a positive result by at least one lab method),
+with thorium where the same sample has it. Each zip holds the state's samples in one-degree files (`ut_38_w110.json`)
+and `index.json` listing each file's box and sample count. Locations outside the state (seafloor and lake-bottom samples)
+are left out. Checksums: `uranium/SHA256SUMS.txt`. Built with the app's tools/prospects/samples/build_samples.py
+(`pack-uranium`), as described in its NOTES.md, "Uranium in every state".
+
+Source: Granitto, M., Goldman, M.A., Labay, K.A., San Juan, C.A., Azain, J.S., and Rozinek, T.R., 2026, Geochemical data
+for rock, sediment, soil, and mineral samples, United States and territories, 1962 to 2023: U.S. Geological Survey data
+release, https://doi.org/10.5066/P1FXE9GK (CC0 1.0), read from its feature service on 2026-11-06.
+
+What it can't tell you: a result is what one lab found in one sample at the location recorded for it; old locations can
+be rough. A high value is a place to look, not a find, and uranium and thorium minerals are radioactive.
