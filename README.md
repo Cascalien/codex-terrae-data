@@ -42,9 +42,11 @@ One SQLite file per state (`places-ca.db` ... `places-tx.db`) of USGS Geographic
 and military names left out, for the app's offline place search. Same layout as the place names built into the
 app (tools/places/build_places_db.py): `place(id, name, class, county, state, lat, lon)` with positions as
 degrees times 100,000, and `word(w, place)` for prefix search. States: California, Wyoming, New Mexico, North
-Dakota, South Dakota, Nebraska, Kansas, Oklahoma and Texas (v1), and North Carolina (v1.1, 2026-10-31). Checksums: `places/SHA256SUMS.txt`. As with altered
+Dakota, South Dakota, Nebraska, Kansas, Oklahoma and Texas (v1), North Carolina (v1.1, 2026-10-31), and Minnesota, Iowa,
+Missouri, Arkansas and Louisiana (v1.2, 2026-11-06). Checksums: `places/SHA256SUMS.txt`. As with altered
 rock, the app reads each file at the commit that added it.
 
 Source: U.S. Geological Survey, Geographic Names Information System, Domestic Names, state files from
 https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/DomesticNames/ (public domain), downloaded
-2026-10-30 (North Carolina's on 2026-10-31), built with the app's tools/places/build_place_packs.py.
+2026-10-30 (North Carolina's on 2026-10-31; Minnesota's, Iowa's, Missouri's, Arkansas's and Louisiana's on 2026-11-06),
+built with the app's tools/places/build_place_packs.py.
