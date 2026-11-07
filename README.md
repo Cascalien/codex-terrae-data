@@ -52,3 +52,9 @@ Source: U.S. Geological Survey, Geographic Names Information System, Domestic Na
 https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/DomesticNames/ (public domain), downloaded
 2026-10-30 (North Carolina's on 2026-10-31; Minnesota's, Iowa's, Missouri's, Arkansas's and Louisiana's on 2026-11-06;
 v1.3's and v1.4's eight states' on 2026-11-06), built with the app's tools/places/build_place_packs.py.
+
+v1.5 (2026-11-06): New Jersey, New York, Connecticut, Rhode Island, Massachusetts, Vermont, New Hampshire and Maine
+(`places-nj.db` ... `places-me.db`), from GNIS state files downloaded 2026-11-06 and built the same way, census, civil
+and military names left out. Their checksums are appended to `places/SHA256SUMS.txt`; the app reads them at the commit
+that added them. GNIS puts the Saint Lawrence River's point at its mouth in the Gulf of St. Lawrence (49.67 N, 64.50 W);
+the app's box for New York, which only decides where search offers the file, is drawn round the state's other names.
