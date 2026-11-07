@@ -52,3 +52,8 @@ Source: U.S. Geological Survey, Geographic Names Information System, Domestic Na
 https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/DomesticNames/ (public domain), downloaded
 2026-10-30 (North Carolina's on 2026-10-31; Minnesota's, Iowa's, Missouri's, Arkansas's and Louisiana's on 2026-11-06;
 v1.3's and v1.4's eight states' on 2026-11-06), built with the app's tools/places/build_place_packs.py.
+
+Place names v1.6 (2026-11-06): Alaska (`places-ak.db`, 28,986 places) and Hawaii (`places-hi.db`, 5,785 places), from
+the GNIS state files downloaded 2026-11-06 and built with tools/places/build_place_packs.py as for the others. Alaska's
+places cross the 180th meridian (the western Aleutians, 172 to 180 E), so the app's box for it runs from 172.44 E east
+across the meridian to 130.0 W; Hawaii's reaches Kure Atoll (178.34 W) in the Northwestern Hawaiian Islands.
