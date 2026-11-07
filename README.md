@@ -43,11 +43,12 @@ and military names left out, for the app's offline place search. Same layout as 
 app (tools/places/build_places_db.py): `place(id, name, class, county, state, lat, lon)` with positions as
 degrees times 100,000, and `word(w, place)` for prefix search. States: California, Wyoming, New Mexico, North
 Dakota, South Dakota, Nebraska, Kansas, Oklahoma and Texas (v1), North Carolina (v1.1, 2026-10-31), Minnesota, Iowa,
-Missouri, Arkansas and Louisiana (v1.2, 2026-11-06), and Wisconsin, Illinois, Michigan, Indiana, Ohio, Tennessee,
-Mississippi and Alabama (v1.3, 2026-11-06). Checksums: `places/SHA256SUMS.txt`. As with altered
+Missouri, Arkansas and Louisiana (v1.2, 2026-11-06), Wisconsin, Illinois, Michigan, Indiana, Ohio, Tennessee,
+Mississippi and Alabama (v1.3, 2026-11-06), and Georgia, Florida, South Carolina, Virginia, West Virginia, Maryland,
+Delaware and Pennsylvania (v1.4, 2026-11-06). Checksums: `places/SHA256SUMS.txt`. As with altered
 rock, the app reads each file at the commit that added it.
 
 Source: U.S. Geological Survey, Geographic Names Information System, Domestic Names, state files from
 https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/DomesticNames/ (public domain), downloaded
 2026-10-30 (North Carolina's on 2026-10-31; Minnesota's, Iowa's, Missouri's, Arkansas's and Louisiana's on 2026-11-06;
-v1.3's eight states' on 2026-11-06), built with the app's tools/places/build_place_packs.py.
+v1.3's and v1.4's eight states' on 2026-11-06), built with the app's tools/places/build_place_packs.py.
