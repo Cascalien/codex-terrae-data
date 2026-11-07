@@ -94,3 +94,8 @@ release, https://doi.org/10.5066/P1FXE9GK (CC0 1.0), read from its feature servi
 
 What it can't tell you: a result is what one lab found in one sample at the location recorded for it; old locations can
 be rough. A high value is a place to look, not a find, and uranium and thorium minerals are radioactive.
+
+Place names v1.6 (2026-11-06): Alaska (`places-ak.db`, 28,986 places) and Hawaii (`places-hi.db`, 5,785 places), from
+the GNIS state files downloaded 2026-11-06 and built with tools/places/build_place_packs.py as for the others. Alaska's
+places cross the 180th meridian (the western Aleutians, 172 to 180 E), so the app's box for it runs from 172.44 E east
+across the meridian to 130.0 W; Hawaii's reaches Kure Atoll (178.34 W) in the Northwestern Hawaiian Islands.
