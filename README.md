@@ -95,6 +95,12 @@ release, https://doi.org/10.5066/P1FXE9GK (CC0 1.0), read from its feature servi
 What it can't tell you: a result is what one lab found in one sample at the location recorded for it; old locations can
 be rough. A high value is a place to look, not a find, and uranium and thorium minerals are radioactive.
 
+Uranium v1.1 (2026-11-08): the same samples, files and boxes, with how each was measured. Every sample now carries "am",
+the USGS method code of the uranium result shown, and "ao", its other uranium results as "value code" (a negative value is
+a result under that method's lower limit, which USGS writes as minus the limit), read from the same feature service on
+2026-11-08 (U_AM and U_ppm_ALL). Added with the app's tools/prospects/samples/add_uranium_methods.py; the app reads v1.1 at
+the commit that added it, and v1's commit stays readable.
+
 Place names v1.6 (2026-11-06): Alaska (`places-ak.db`, 28,986 places) and Hawaii (`places-hi.db`, 5,785 places), from
 the GNIS state files downloaded 2026-11-06 and built with tools/places/build_place_packs.py as for the others. Alaska's
 places cross the 180th meridian (the western Aleutians, 172 to 180 E), so the app's box for it runs from 172.44 E east
