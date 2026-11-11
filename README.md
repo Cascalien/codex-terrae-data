@@ -108,7 +108,7 @@ across the meridian to 130.0 W; Hawaii's reaches Kure Atoll (178.34 W) in the No
 
 ## Kentucky fossil localities (`fossils/`): in the app since 0.9.2.90 (Prax's decision, 2026-11-11)
 
-Branch `kgs-fossil-points` only. The app doesn't read this file and no build ships it.
+The app bundles these rows inside its own fossils.db (tools/fossils/merge_kgs.py); this file is the source copy.
 
 `fossils/kgs-fossils-ky.db`: the Kentucky Geological Survey's 1:24,000 Fossil Points, 3,435 fossil localities marked
 on KGS / USGS 7.5-minute geologic quadrangle maps, in the same `site` table layout as the app's bundled `fossils.db`
