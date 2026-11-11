@@ -105,3 +105,22 @@ Place names v1.6 (2026-11-06): Alaska (`places-ak.db`, 28,986 places) and Hawaii
 the GNIS state files downloaded 2026-11-06 and built with tools/places/build_place_packs.py as for the others. Alaska's
 places cross the 180th meridian (the western Aleutians, 172 to 180 E), so the app's box for it runs from 172.44 E east
 across the meridian to 130.0 W; Hawaii's reaches Kure Atoll (178.34 W) in the Northwestern Hawaiian Islands.
+
+## Kentucky fossil localities (`fossils/`): WAITING ON PRAX'S DECISION, NOT FOR THE APP YET
+
+Branch `kgs-fossil-points` only. The app doesn't read this file and no build ships it.
+
+`fossils/kgs-fossils-ky.db`: the Kentucky Geological Survey's 1:24,000 Fossil Points, 3,435 fossil localities marked
+on KGS / USGS 7.5-minute geologic quadrangle maps, in the same `site` table layout as the app's bundled `fossils.db`
+(ids 9,000,000 + KGS's OBJECTID). Checksum: `fossils/SHA256SUMS.txt`. Built with the app's
+tools/fossils/fetch_kgs.py and build_kgs_fossils.py (the app's tools/fossils/README.md, "Kentucky Geological Survey
+fossil points").
+
+Source: Kentucky Geological Survey, Geospatial Analysis Section, Digital Mapping Team, compiled by Thomas N. Sparks
+and Matt M. Crawford, published by the Kentucky Division of Geographic Information on ArcGIS Online
+(https://www.arcgis.com/home/item.html?id=f75962edb8b74e199954d7c00e2ee4e2), downloaded 2026-11-11.
+
+License, read 2026-11-11, contradictory: the item's license is CC0 ("https://creativecommons.org/publicdomain/zero/1.0/";
+the open data portal lists it as "CC0-1.0"), but the same terms say "These data may not be distributed outside of
+Kentucky State Government. Refer inquiries to the Kentucky Geological Survey." KGS was asked by email on 2026-11-09;
+the message hasn't been delivered. Don't merge until Prax decides.
