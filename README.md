@@ -106,7 +106,7 @@ the GNIS state files downloaded 2026-11-06 and built with tools/places/build_pla
 places cross the 180th meridian (the western Aleutians, 172 to 180 E), so the app's box for it runs from 172.44 E east
 across the meridian to 130.0 W; Hawaii's reaches Kure Atoll (178.34 W) in the Northwestern Hawaiian Islands.
 
-## Kentucky fossil localities (`fossils/`): in the app since 0.9.2.90 (Prax's decision, 2026-11-11), NOT FOR THE APP YET
+## Kentucky fossil localities (`fossils/`): in the app since 0.9.2.90 (Prax's decision, 2026-11-11)
 
 Branch `kgs-fossil-points` only. The app doesn't read this file and no build ships it.
 
